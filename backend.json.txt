@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^[a-zA-Z0-9]{28}$": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "food": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": ["age", "color", "food", "image", "name"]
+    }
+  }
+}
